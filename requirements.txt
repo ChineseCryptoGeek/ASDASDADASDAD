@@ -1,0 +1,8 @@
+yt-dlp
+openai-whisper
+anthropic
+opencv-python-headless
+Pillow
+numpy
+flask
+gunicorn

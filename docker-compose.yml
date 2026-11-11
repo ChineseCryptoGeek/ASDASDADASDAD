@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  clipper:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./clips:/app/clips
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - WHISPER_MODEL=${WHISPER_MODEL:-base}
+      - OUTPUT_DIR=/app/clips
